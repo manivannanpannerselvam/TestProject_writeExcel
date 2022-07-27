@@ -64,7 +64,7 @@ public class TextFileModificationProgram {
         }
     }
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws Exception {
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy");
 
         String date = sdf.format(new Date());
@@ -81,8 +81,16 @@ public class TextFileModificationProgram {
         dt = sdf.format(c.getTime());
         System.out.println(dt);
 
-        modifyFile("/Users/manivannanpanneerselvam/Downloads/learning-spark-with-java-master/target/test1.txt", "18-Jul-2022", dt);
+       String file2 = System.getProperty("user.dir");
+       System.out.println(" File2--------------> "+file2);
+
+        modifyFile(System.getProperty("user.dir") + "/src/main/java/pkg1/test1.txt","18-Jul-2022", dt);
+     //   modifyFile("/Users/manivannanpanneerselvam/Downloads/learning-spark-with-java-master/target/test1.txt", "18-Jul-2022", dt);
        // modifyFile("/Users/manivannanpanneerselvam/Downloads/s02_AM_complete.xlsx", dt, date);
         System.out.println("done");
     }
+
+
+
+
 }

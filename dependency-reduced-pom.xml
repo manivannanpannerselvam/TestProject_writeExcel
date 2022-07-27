@@ -28,7 +28,7 @@
         <configuration>
           <transformers>
             <transformer>
-              <mainClass>pkg1.GFG</mainClass>
+              <mainClass>pkg1.TextFileModificationProgram</mainClass>
             </transformer>
           </transformers>
         </configuration>
