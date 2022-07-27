@@ -82,7 +82,7 @@ public class TextFileModificationProgram {
         System.out.println(dt);
 
        String file2 = System.getProperty("user.dir");
-       System.out.println(" File2--------------> "+file2);
+       System.out.println(" File2-----------------> "+file2);
 
         modifyFile(System.getProperty("user.dir") + "/src/main/java/pkg1/test1.txt","18-Jul-2022", dt);
      //   modifyFile("/Users/manivannanpanneerselvam/Downloads/learning-spark-with-java-master/target/test1.txt", "18-Jul-2022", dt);
